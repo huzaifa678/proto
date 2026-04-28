@@ -260,8 +260,6 @@ A: Yes! Use `buf lint`, `buf breaking`, and `buf generate` locally before pushin
 For questions about:
 - **Setup:** See [README_SETUP.md](README_SETUP.md)
 - **Migration:** See [MIGRATION_GUIDE.md](MIGRATION_GUIDE.md)
-- **NestJS:** See [EXAMPLES_NESTJS.md](EXAMPLES_NESTJS.md)
-- **Spring Boot:** See [EXAMPLES_SPRINGBOOT.md](EXAMPLES_SPRINGBOOT.md)
 - **Registries:** See [REGISTRY_COMPARISON.md](REGISTRY_COMPARISON.md)
 
 ---
