@@ -1,20 +1,22 @@
 syntax = "proto3";
 
-package subscription;
+package subscription.v1;
 
 import "google/protobuf/timestamp.proto";
 
 service SubscriptionService {
-  rpc GetSubscription(GetSubscriptionRequest) returns (SubscriptionResponse);
+  rpc GetSubscription(GetSubscriptionRequest) 
+      returns (GetSubscriptionResponse);
 
-  rpc GetUserActiveSubscriptions(GetUserActiveSubscriptionsRequest) returns (GetUserActiveSubscriptionsResponse);
+  rpc GetUserActiveSubscriptions(GetUserActiveSubscriptionsRequest) 
+      returns (GetUserActiveSubscriptionsResponse);
 }
 
 message GetSubscriptionRequest {
   string subscription_id = 1;
 }
 
-message SubscriptionResponse {
+message GetSubscriptionResponse {
   string id = 1;
   string user_id = 2;
   string plan_id = 3;
@@ -31,5 +33,5 @@ message GetUserActiveSubscriptionsRequest {
 }
 
 message GetUserActiveSubscriptionsResponse {
-  repeated SubscriptionResponse subscriptions = 1;
+  repeated GetSubscriptionResponse subscriptions = 1;
 }

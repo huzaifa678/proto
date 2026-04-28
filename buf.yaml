@@ -1,10 +1,13 @@
-version: v1
-build:
-  roots:
-    - .
+version: v2
+
+modules:
+  - path: .
+    name: buf.build/protocol-buffer-org/proto
+
 lint:
   use:
-    - DEFAULT
+    - STANDARD
+
 breaking:
   use:
     - FILE
