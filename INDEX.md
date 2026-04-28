@@ -4,7 +4,7 @@ Complete guide for managing shared protobuf schemas across NestJS and Spring Boo
 
 ---
 
-## 📚 Documentation Files
+## Documentation Files
 
 ### 1. **[README_SETUP.md](README_SETUP.md)** - START HERE ⭐
 **Overview of the complete setup**
@@ -82,7 +82,7 @@ Complete guide for managing shared protobuf schemas across NestJS and Spring Boo
 
 ---
 
-## 🏗️ Configuration Files (Already Created)
+## Configuration Files (Already Created)
 
 ### Root Level
 ```
@@ -108,7 +108,7 @@ Complete guide for managing shared protobuf schemas across NestJS and Spring Boo
 
 ---
 
-## 🎯 Current Setup Status
+## Current Setup Status
 
 ### Central Repo (`/Users/smartboy/proto`)
 | Component | Status | Details |
@@ -139,7 +139,7 @@ Complete guide for managing shared protobuf schemas across NestJS and Spring Boo
 
 ---
 
-## 🚀 Quick Start (Next 5 Minutes)
+## Quick Start (Next 5 Minutes)
 
 ### 1. Read Overview
 ```bash
@@ -176,7 +176,7 @@ open QUICK_CHECKLIST.md
 
 ---
 
-## 📋 Migration Steps (Next 1.5 Hours)
+## Migration Steps (Next 1.5 Hours)
 
 ### Phase 1: Central Repository (15 mins)
 - ✅ Configuration files created
@@ -211,7 +211,7 @@ open QUICK_CHECKLIST.md
 
 ---
 
-## 🏆 Benefits After Migration
+## Benefits After Migration
 
 ### For Developers
 ✅ Single schema definition - no duplicates to sync
@@ -265,7 +265,7 @@ npm set //npm.pkg.github.com/:_authToken=$GITHUB_TOKEN
 
 ---
 
-## 🔄 Proto Change Workflow (Going Forward)
+## Proto Change Workflow (Going Forward)
 
 ### 1. Update Schema
 ```bash
@@ -302,7 +302,7 @@ npm update @org/proto-contracts
 
 ---
 
-## 📊 Architecture Overview
+## Architecture Overview
 
 ```
 ┌─────────────────────────────────────────┐
@@ -331,7 +331,7 @@ Subscription Service         Billing Service
 
 ---
 
-## ✅ Verification Checklist
+## Verification Checklist
 
 Before considering migration complete:
 
@@ -348,7 +348,7 @@ Before considering migration complete:
 
 ---
 
-## 📖 Document Usage Guide
+## Document Usage Guide
 
 | Document | When to Use | Read Time |
 |----------|------------|-----------|
@@ -362,7 +362,7 @@ Before considering migration complete:
 
 ---
 
-## 🎓 Next Steps
+## Next Steps
 
 1. **Understand** - Read [README_SETUP.md](README_SETUP.md)
 2. **Plan** - Review [MIGRATION_GUIDE.md](MIGRATION_GUIDE.md)
