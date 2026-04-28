@@ -44,14 +44,9 @@ proto/                                  # Central schema repository
 │   └── workflows/
 │       ├── buf-publish.yml            # Validates & publishes to Buf registry
 │       └── generate-artifacts.yml     # Auto-generates & publishes packages
-└── Documentation/
-    ├── INDEX.md                       # Documentation index
-    ├── README_SETUP.md                # Setup guide
-    ├── QUICK_CHECKLIST.md             # Migration checklist
-    ├── MIGRATION_GUIDE.md             # Migration walkthrough
-    ├── EXAMPLES_NESTJS.md             # NestJS code examples
-    ├── EXAMPLES_SPRINGBOOT.md         # Spring Boot code examples
-    └── REGISTRY_COMPARISON.md         # Registry comparison
+├── INDEX.md                       # Documentation index
+├── MIGRATION_GUIDE.md             # Migration walkthrough
+└── REGISTRY_COMPARISON.md         # Registry comparison
 ```
 
 ---
