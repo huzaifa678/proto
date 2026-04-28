@@ -25,11 +25,7 @@ Central repository for protobuf schema definitions shared between NestJS and Spr
 | Document | Purpose |
 |----------|---------|
 | **[INDEX.md](INDEX.md)** | Start here - documentation index & overview |
-| **[README_SETUP.md](README_SETUP.md)** | Complete setup guide (current vs target architecture) |
-| **[QUICK_CHECKLIST.md](QUICK_CHECKLIST.md)** | Migration checklist & progress tracking |
 | **[MIGRATION_GUIDE.md](MIGRATION_GUIDE.md)** | Detailed step-by-step migration instructions |
-| **[EXAMPLES_NESTJS.md](EXAMPLES_NESTJS.md)** | NestJS gRPC server implementation |
-| **[EXAMPLES_SPRINGBOOT.md](EXAMPLES_SPRINGBOOT.md)** | Spring Boot gRPC client implementation |
 | **[REGISTRY_COMPARISON.md](REGISTRY_COMPARISON.md)** | Why Buf Schema Registry is recommended |
 
 ---
