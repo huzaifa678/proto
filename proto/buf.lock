@@ -1,0 +1,7 @@
+version: v1
+deps:
+  - remote: buf.build
+    owner: googleapis
+    repository: googleapis
+    commit: 1d10b87d55c54fbaa4da97861e86285e
+    digest: sha256:19769269e0b11c0f76174e510ba4e927b53fb0997b476ef56860e60551dcf2da

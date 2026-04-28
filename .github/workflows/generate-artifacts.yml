@@ -1,0 +1,38 @@
+name: Generate Artifacts
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - '**.proto'
+      - 'buf.gen.yaml'
+  workflow_dispatch:
+
+jobs:
+  generate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      
+      - name: Generate protobuf code
+        uses: bufbuild/buf-generate-action@v1
+        with:
+          buf_token: ${{ secrets.BUF_TOKEN }}
+      
+      - name: Push TypeScript to NPM
+        if: always()
+        run: |
+          cd generated/ts
+          npm publish
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      
+      - name: Build and push Java
+        if: always()
+        run: |
+          cd generated/java
+          mvn deploy
+        env:
+          MAVEN_USERNAME: github
+          MAVEN_TOKEN: ${{ secrets.GITHUB_TOKEN }}
