@@ -23,10 +23,10 @@ Project Structure:
 │   └── ...
 │
 └── proto/                             (NEW - Central Repo)
-    ├── proto/subscription.proto
-    ├── buf.yaml
-    ├── buf.gen.yaml
-    └── buf.lock
+    ├── subscription/v1/                 
+    |               ├──subscription.proto
+    |               └── buf.lock  
+    ├── buf.yaml                            
 ```
 
 ## Target State (After Migration)
