@@ -33,13 +33,11 @@ Central repository for protobuf schema definitions shared between NestJS and Spr
 ## 🏗️ Project Structure
 
 ```
-proto/                                  # Central schema repository
-├── proto/
-│   └── subscription.proto             # Schema definition (single source of truth)
-├── buf.yaml                           # Linting & validation rules
-├── buf.gen.yaml                       # Code generation configuration
-├── buf.lock                           # Dependency lock file
-├── package.json                       # npm configuration with Buf scripts
+proto/                                    # Central schema repository
+subscription/v1/                 
+|            ├──subscription.proto
+|            └── buf.lock                 # Dependency lock file
+├── buf.yaml                              # Linting & validation rules
 ├── .github/
 │   └── workflows/
 │       ├── buf-publish.yml            # Validates & publishes to Buf registry
