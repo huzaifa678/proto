@@ -6,28 +6,29 @@ on:
       - main
     paths:
       - '**.proto'
-      - 'buf.gen.yaml'
   workflow_dispatch:
 
 jobs:
   generate:
     runs-on: ubuntu-latest
+
     steps:
       - uses: actions/checkout@v4
-      
+
+      - name: Install Buf
+        uses: bufbuild/buf-setup-action@v1
+
       - name: Generate protobuf code
-        uses: bufbuild/buf-generate-action@v1
-        with:
-          buf_token: ${{ secrets.BUF_TOKEN }}
-      
-      - name: Push TypeScript to NPM
+        run: buf generate
+
+      - name: Push TypeScript to PNPM
         if: always()
         run: |
           cd generated/ts
-          npm publish
+          pnpm publish
         env:
           NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-      
+
       - name: Build and push Java
         if: always()
         run: |
