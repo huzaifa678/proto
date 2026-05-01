@@ -21,7 +21,7 @@ jobs:
       - name: Generate protobuf code
         run: buf generate
 
-      - name: Push TypeScript to PNPM
+      - name: Push TypeScript to NPM
         if: always()
         run: |
           cd generated/ts
